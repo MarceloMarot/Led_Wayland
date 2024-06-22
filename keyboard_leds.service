@@ -1,0 +1,11 @@
+
+
+[Unit]
+Description=Turning on LEDs - periodic task.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/keyboard_leds.sh /sys/class/leds/  0.2
+
+[Install]
+WantedBy=multi-user.target
