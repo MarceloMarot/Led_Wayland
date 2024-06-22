@@ -5,6 +5,8 @@
 This service searchs the keyboard LEDS from their Wayland folder and forces to turn them periodically every 0.2 seconds.
 
 
+[Spanish version - LEEME.md](LEEME.md#leds-de-teclado-con-systemd-y-wayland)
+
 ## How to Install
 
 Open a Bash terminal and paste in it the comands:
@@ -20,7 +22,7 @@ sudo chmod +x install.sh
 sudo ./install.sh
 ```
 
-## Giving user permissions
+## Giving User Permissions
 
 This task requires user permissions to work properly. 
 Users require execution permissions to run this task properly.
@@ -34,12 +36,20 @@ sudo nano /etc/sudoers
 then add the following line codes at the end and save:
  
 ```bash
-## Enabling permissions to all users for this particular task
+## Enabling permissions to all users for this particular task   
 ALL ALL=(ALL) /etc/systemd/system/keyboard_leds.service
 ```
 
 It gives permissions to all users to execute this task.
 
+
+## How to Uninstall
+
+Execute this line codes in Bash:
+```bash
+chmod +x uninstall.sh 
+sudo ./uninstall.sh
+```
 
 
 ## References:

@@ -4,8 +4,10 @@
 
 Este servicio busca los LEDs de teclado desde su directorio de Wayland y fuerza su estado a encendido periódicamente cada 0.2 segundos. 
 
+[Version en inglés - README.md](README.md#keyboard-leds-with-wayland-and-systemd)
 
-## Cómo instalar
+
+## Cómo Instalar
 
 
 Abre una terminal Bash y pega en ella los comandos:
@@ -23,7 +25,7 @@ sudo ./install.sh
 ```
 
 
-## Asignar permisos
+## Asignar Permisos de Usuario
 
 Esta tarea requiere que el usuario tenga permisos para que funcione correctamente. 
 
@@ -40,6 +42,16 @@ ALL ALL=(ALL) /etc/systemd/system/keyboard_leds.service
 ```
 
 Esto le da permiso a todos los usuarios de ejecutar esta tarea.
+
+
+## Cómo Desinstalar
+
+Ejecuta estas lineas en Bash:
+```bash
+chmod +x uninstall.sh 
+sudo ./uninstall.sh
+```
+
 
 
 ## Referencias:
